@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: lightblue;
+    color: #333;
+}
+
+.stopwatch-container {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid lightgray;
+}
+
+#display {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: white;
+    width: 250px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, slateblue, mediumslateblue);
+    display: inline-block;
+    text-align: center;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+    transition: background-color 0.3s, transform 0.2s;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#startStop {
+    background-color: tomato;
+}
+
+#startStop:hover {
+    background-color: darkred;
+}
+
+#reset {
+    background-color: gold;
+}
+
+#reset:hover {
+    background-color: darkgoldenrod;
+}
+
+#lap {
+    background-color: limegreen;
+}
+
+#lap:hover {
+    background-color: darkgreen;
+}
+
+#clear {
+    background-color: dodgerblue;
+}
+
+#clear:hover {
+    background-color: darkblue;
+}
+
+#laps {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 10px;
+    border-top: 2px solid lightgray;
+    border-radius: 10px;
+    background-color: snow;
+}
+
+.lap-time {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
